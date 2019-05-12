@@ -29,7 +29,7 @@ namespace WindowsFormsApplication6
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-          //  if (blankfieldsValidation() == false)
+        //  if (blankfieldsValidation() == false)
             {
                 CreateUser();
             }
@@ -129,8 +129,8 @@ namespace WindowsFormsApplication6
             txtpassword.Text = dgvusersdetails.SelectedRows[0].Cells["Password"].Value.ToString();
             cmbRole.Text = dgvusersdetails.SelectedRows[0].Cells["Role"].Value.ToString();
         }
-    
-       
+
+      
     }
     }
 
