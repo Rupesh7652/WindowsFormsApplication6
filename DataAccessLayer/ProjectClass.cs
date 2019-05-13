@@ -11,8 +11,8 @@ namespace DataAccessLayer
     {
         SqlConnection cnnect = new SqlConnection(Connectionclass.ConnectionString);
 
-        public int ManageProduct(int ProductId,
-            string ProductName,
+        public int ManageProduct(int ProjectId,
+            string ProjectName,
             DateTime StartDate,
             DateTime EndDate,
            string Description,
@@ -20,12 +20,13 @@ namespace DataAccessLayer
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("SP_ManageProducts", cnnect);
+                SqlCommand cmd = new SqlCommand("SP_ManageProject", cnnect);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ProductId", ProductId);
-                cmd.Parameters.AddWithValue("@ProductName", ProductName);
-                cmd.Parameters.AddWithValue("@StatDate", StartDate);
+                cmd.Parameters.AddWithValue("@ProjectId", ProjectId);
+                cmd.Parameters.AddWithValue("@ProjectName", ProjectName);
+                cmd.Parameters.AddWithValue("@StartDate", StartDate);
                 cmd.Parameters.AddWithValue("@EndDate", EndDate);
+                cmd.Parameters.AddWithValue("@Description", Description);
                 cmd.Parameters.AddWithValue("@Mode", Mode);
                 cnnect.Open();
                 int result = cmd.ExecuteNonQuery();
@@ -48,7 +49,7 @@ namespace DataAccessLayer
             try
             {
                 DataTable dt = new DataTable();
-                SqlCommand cmd = new SqlCommand("select ProductId,ProductName,CategoryName,Rate,CostPrice,MfgDate,ExpDate from ProductTable inner join CategoryTable on ProductTable.CategoryId=CategoryTable.CategoryId", cnnect);
+                SqlCommand cmd = new SqlCommand("select * from ProjectTable", cnnect);
                 cnnect.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 dt.Load(dr);

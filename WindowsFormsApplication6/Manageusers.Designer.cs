@@ -69,6 +69,7 @@
             this.dgvusersdetails.Location = new System.Drawing.Point(-2, -2);
             this.dgvusersdetails.Name = "dgvusersdetails";
             this.dgvusersdetails.ReadOnly = true;
+            this.dgvusersdetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvusersdetails.Size = new System.Drawing.Size(635, 176);
             this.dgvusersdetails.TabIndex = 0;
             this.dgvusersdetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusersdetails_CellContentClick);
