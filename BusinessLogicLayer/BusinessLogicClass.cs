@@ -10,6 +10,7 @@ namespace BusinessLogicLayer
     public class BusinessLogicClass
     {
         UserClass uc = new UserClass();
+        ProjectClass pc = new ProjectClass();
         public bool ManageUsers(int UserId, string FullName, string Username, string Password, string Role, int Mode)
         {
             try
@@ -31,6 +32,8 @@ namespace BusinessLogicLayer
             throw new NotImplementedException();
         }
     }
-}
+  
+    }
+
         
 

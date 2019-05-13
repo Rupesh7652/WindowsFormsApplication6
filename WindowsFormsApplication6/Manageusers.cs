@@ -29,13 +29,6 @@ namespace WindowsFormsApplication6
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-        //  if (blankfieldsValidation() == false)
-            {
-                CreateUser();
-            }
-        }
-        private void CreateUser()
-        {
             try
             {
                 bool result = blc.ManageUsers(0, txtfullname.Text, txtusername.Text, txtpassword.Text, cmbRole.Text, 1);

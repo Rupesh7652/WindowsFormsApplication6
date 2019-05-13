@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DataAccessLayer;
 namespace WindowsFormsApplication6
 {
     public partial class Login : Form
@@ -16,7 +16,7 @@ namespace WindowsFormsApplication6
         {
             InitializeComponent();
         }
-      
+        UserClass uc = new UserClass();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -24,7 +24,43 @@ namespace WindowsFormsApplication6
 
         private void btnrolebasedlogin_Click(object sender, EventArgs e)
         {
-           
+            if (txtUsername.Text == "")
+            {
+                MessageBox.Show("Please provide Username");
+            }
+            else if (txtPassword.Text == "")
+            {
+                MessageBox.Show("Please provide Password");
+            }
+            else if (txtUsername.Text != txtPassword.Text)
+            {
+                MessageBox.Show("Invalid Username and Password");
+            }
+            else
+                try
+                {
+                    string role = uc.RoleBasedLogin(txtUsername.Text, txtPassword.Text);
+                    if (role == "Debugger")
+                    {
+                        Dashboard db = new Dashboard();
+                        db.Show();
+                    }
+                    else if (role == "User")
+                    {
+                        Dashboard db = new Dashboard();
+                        db.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Username or Password");
+                        HelperClass.makefields(groupBox1);
+                        txtUsername.Focus();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
         }
 
         private void BTNcANCEL_Click(object sender, EventArgs e)
