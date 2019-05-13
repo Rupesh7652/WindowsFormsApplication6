@@ -81,9 +81,9 @@
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Location = new System.Drawing.Point(3, 219);
+            this.panel1.Location = new System.Drawing.Point(3, 232);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(637, 62);
+            this.panel1.Size = new System.Drawing.Size(637, 49);
             this.panel1.TabIndex = 6;
             // 
             // btnClose
@@ -91,7 +91,7 @@
             this.btnClose.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(481, 13);
+            this.btnClose.Location = new System.Drawing.Point(481, 5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(119, 38);
             this.btnClose.TabIndex = 3;
@@ -104,7 +104,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(334, 13);
+            this.btnDelete.Location = new System.Drawing.Point(334, 5);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(105, 38);
             this.btnDelete.TabIndex = 2;
@@ -117,7 +117,7 @@
             this.btnUpdate.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(185, 13);
+            this.btnUpdate.Location = new System.Drawing.Point(185, 5);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 38);
             this.btnUpdate.TabIndex = 1;
@@ -130,7 +130,7 @@
             this.btnAdd.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(43, 13);
+            this.btnAdd.Location = new System.Drawing.Point(43, 5);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(107, 38);
             this.btnAdd.TabIndex = 0;
@@ -152,7 +152,7 @@
             this.grpContainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpContainer.Location = new System.Drawing.Point(3, 40);
             this.grpContainer.Name = "grpContainer";
-            this.grpContainer.Size = new System.Drawing.Size(637, 173);
+            this.grpContainer.Size = new System.Drawing.Size(637, 186);
             this.grpContainer.TabIndex = 5;
             this.grpContainer.TabStop = false;
             // 
@@ -161,15 +161,18 @@
             this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRole.FormattingEnabled = true;
             this.cmbRole.Items.AddRange(new object[] {
-            "Debugger"});
-            this.cmbRole.Location = new System.Drawing.Point(144, 137);
+            "Debugger",
+            "Tester",
+            "Programmer",
+            "User"});
+            this.cmbRole.Location = new System.Drawing.Point(144, 147);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(161, 21);
             this.cmbRole.TabIndex = 7;
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(144, 102);
+            this.txtpassword.Location = new System.Drawing.Point(144, 107);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(161, 20);
             this.txtpassword.TabIndex = 6;
@@ -177,7 +180,8 @@
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(144, 70);
+            this.txtusername.Location = new System.Drawing.Point(144, 63);
+            this.txtusername.Multiline = true;
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(161, 20);
             this.txtusername.TabIndex = 5;
@@ -188,13 +192,13 @@
             this.txtfullname.Location = new System.Drawing.Point(144, 24);
             this.txtfullname.Multiline = true;
             this.txtfullname.Name = "txtfullname";
-            this.txtfullname.Size = new System.Drawing.Size(161, 23);
+            this.txtfullname.Size = new System.Drawing.Size(161, 20);
             this.txtfullname.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 140);
+            this.label5.Location = new System.Drawing.Point(24, 150);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 3;
@@ -203,7 +207,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 105);
+            this.label4.Location = new System.Drawing.Point(24, 110);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 2;

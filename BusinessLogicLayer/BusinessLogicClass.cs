@@ -11,11 +11,21 @@ namespace BusinessLogicLayer
     {
         UserClass uc = new UserClass();
         ProjectClass pc = new ProjectClass();
-        public bool ManageUsers(int UserId, string FullName, string Username, string Password, string Role, int Mode)
+        public bool ManageUsers(int UserId,
+            string FullName,
+            string Username,
+            string Password,
+            string Role,
+            int Mode)
         {
             try
             {
-                int result = uc.ManageUsers(UserId, FullName, Username, Password, Role, Mode);
+                int result = uc.ManageUsers(UserId,
+                    FullName,
+                    Username,
+                    Password,
+                    Role,
+                    Mode);
                 if (result > 0)
                     return true;
                 else return false;
@@ -27,13 +37,34 @@ namespace BusinessLogicLayer
             }
         }
 
-        public bool User(int v1, string text1, string text2, string text3, string text4, int v2)
+        public bool ManageProduct(int ProductId,
+           string ProductName,
+           DateTime StartDate,
+           DateTime EndDate,
+           string Description,
+           int Mode)
         {
-            throw new NotImplementedException();
+            try
+            {
+                int rs = pc.ManageProduct(ProductId,
+                    ProductName,
+                    StartDate,
+                    EndDate,
+                   Description,
+                   Mode);
+                if (rs > 0)
+                    return true;
+                else return false;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
         }
     }
-  
-    }
+}
 
         
 

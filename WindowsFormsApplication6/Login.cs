@@ -32,10 +32,7 @@ namespace WindowsFormsApplication6
             {
                 MessageBox.Show("Please provide Password");
             }
-            else if (txtUsername.Text != txtPassword.Text)
-            {
-                MessageBox.Show("Invalid Username and Password");
-            }
+           
             else
                 try
                 {
