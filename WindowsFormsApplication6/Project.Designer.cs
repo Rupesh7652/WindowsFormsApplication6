@@ -99,6 +99,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "CANCEL";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -109,6 +110,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "DELETE";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -119,6 +121,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "UPDATE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -212,6 +215,7 @@
             this.dgvprojectdetails.ReadOnly = true;
             this.dgvprojectdetails.Size = new System.Drawing.Size(558, 206);
             this.dgvprojectdetails.TabIndex = 0;
+            this.dgvprojectdetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvprojectdetails_CellClick);
             // 
             // Project
             // 
@@ -223,6 +227,7 @@
             this.MinimumSize = new System.Drawing.Size(574, 584);
             this.Name = "Project";
             this.Text = "Project";
+            this.Load += new System.EventHandler(this.Project_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

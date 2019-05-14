@@ -72,6 +72,7 @@
             this.dgvusersdetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvusersdetails.Size = new System.Drawing.Size(635, 176);
             this.dgvusersdetails.TabIndex = 0;
+            this.dgvusersdetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusersdetails_CellClick);
             this.dgvusersdetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusersdetails_CellContentClick);
             // 
             // panel1

@@ -29,6 +29,14 @@ namespace WindowsFormsApplication6
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (BlankFieldValidation() == false)
+            {
+                CreateUser();
+            }
+        }
+
+        private void CreateUser()
+        {
             try
             {
                 bool result = blc.ManageUsers(0, txtfullname.Text, txtusername.Text, txtpassword.Text, cmbRole.Text, 1);
@@ -116,14 +124,47 @@ namespace WindowsFormsApplication6
 
         private void dgvusersdetails_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+        public bool BlankFieldValidation()
+        {
+            bool res = false;
+            if (txtfullname.Text == "")
+            {
+                MessageBox.Show("Please Provide FullName");
+                txtfullname.Focus();
+                res = true;
+            }
+            else if (txtusername.Text == "")
+            {
+                MessageBox.Show("Please Provide UserName");
+                txtusername.Focus();
+                res = true;
+            }
+            else if (txtpassword.Text == "")
+            {
+                MessageBox.Show("Please Provide Password");
+                txtpassword.Focus();
+                res = true;
+            }
+
+            else if (cmbRole.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please Select the Role");
+                res = true;
+            }
+           
+            return res;
+        }
+    
+        private void dgvusersdetails_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
             UserId = Convert.ToInt32(dgvusersdetails.SelectedRows[0].Cells["UserId"].Value.ToString());
             txtfullname.Text = dgvusersdetails.SelectedRows[0].Cells["FullName"].Value.ToString();
             txtusername.Text = dgvusersdetails.SelectedRows[0].Cells["Username"].Value.ToString();
             txtpassword.Text = dgvusersdetails.SelectedRows[0].Cells["Password"].Value.ToString();
             cmbRole.Text = dgvusersdetails.SelectedRows[0].Cells["Role"].Value.ToString();
         }
-
-      
     }
     }
 
