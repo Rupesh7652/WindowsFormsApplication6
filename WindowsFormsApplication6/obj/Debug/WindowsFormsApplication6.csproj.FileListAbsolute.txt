@@ -13,8 +13,8 @@ C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplic
 C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.searchform.resources
 C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Viewbug.resources
 C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.solutionform.resources
-C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.AddBug.resources
 C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\BusinessLogicLayer.dll
 C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\DataAccessLayer.dll
 C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\BusinessLogicLayer.pdb
 C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\DataAccessLayer.pdb
+C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.BugForm.resources

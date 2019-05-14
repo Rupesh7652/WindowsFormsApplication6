@@ -59,7 +59,7 @@ namespace DataAccessLayer
             try
             {
                 DataTable dt = new DataTable();
-                string Role = "";
+                string Role = "Admin";
                 SqlCommand cmm = new SqlCommand("Select Role from UsersTable where  Username=@Username and Password=@Password", cnnect);
                 cmm.CommandType = CommandType.Text;
              //   cmm.Parameters.AddWithValue("@FullName", FullName);

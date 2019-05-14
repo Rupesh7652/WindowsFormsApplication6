@@ -163,10 +163,9 @@
             this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRole.FormattingEnabled = true;
             this.cmbRole.Items.AddRange(new object[] {
-            "Debugger",
-            "Tester",
-            "Programmer",
-            "User"});
+            "Admin",
+            "User",
+            "Tester"});
             this.cmbRole.Location = new System.Drawing.Point(144, 147);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(161, 21);

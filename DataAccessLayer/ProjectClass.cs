@@ -44,7 +44,7 @@ namespace DataAccessLayer
             }
 
         }
-        public DataTable GetAllProducts()
+        public DataTable GetAllProjects()
         {
             try
             {

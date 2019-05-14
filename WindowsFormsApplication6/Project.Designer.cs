@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvprojectdetails = new System.Windows.Forms.DataGridView();
             this.txtdescription = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -42,8 +44,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dgvprojectdetails = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvprojectdetails)).BeginInit();
@@ -72,6 +72,28 @@
             this.panel1.Size = new System.Drawing.Size(558, 545);
             this.panel1.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dgvprojectdetails);
+            this.panel2.Location = new System.Drawing.Point(0, 339);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(558, 206);
+            this.panel2.TabIndex = 14;
+            // 
+            // dgvprojectdetails
+            // 
+            this.dgvprojectdetails.AllowUserToAddRows = false;
+            this.dgvprojectdetails.AllowUserToDeleteRows = false;
+            this.dgvprojectdetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvprojectdetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvprojectdetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvprojectdetails.Location = new System.Drawing.Point(0, 0);
+            this.dgvprojectdetails.Name = "dgvprojectdetails";
+            this.dgvprojectdetails.ReadOnly = true;
+            this.dgvprojectdetails.Size = new System.Drawing.Size(558, 206);
+            this.dgvprojectdetails.TabIndex = 0;
+            this.dgvprojectdetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvprojectdetails_CellClick);
+            // 
             // txtdescription
             // 
             this.txtdescription.Location = new System.Drawing.Point(169, 231);
@@ -97,7 +119,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 28);
             this.button4.TabIndex = 10;
-            this.button4.Text = "CANCEL";
+            this.button4.Text = "CLOSE";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -189,33 +211,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(343, 18);
+            this.label1.Location = new System.Drawing.Point(228, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Project Form";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dgvprojectdetails);
-            this.panel2.Location = new System.Drawing.Point(0, 339);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(558, 206);
-            this.panel2.TabIndex = 14;
-            // 
-            // dgvprojectdetails
-            // 
-            this.dgvprojectdetails.AllowUserToAddRows = false;
-            this.dgvprojectdetails.AllowUserToDeleteRows = false;
-            this.dgvprojectdetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvprojectdetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvprojectdetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvprojectdetails.Location = new System.Drawing.Point(0, 0);
-            this.dgvprojectdetails.Name = "dgvprojectdetails";
-            this.dgvprojectdetails.ReadOnly = true;
-            this.dgvprojectdetails.Size = new System.Drawing.Size(558, 206);
-            this.dgvprojectdetails.TabIndex = 0;
-            this.dgvprojectdetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvprojectdetails_CellClick);
             // 
             // Project
             // 

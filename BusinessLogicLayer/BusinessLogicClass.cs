@@ -11,6 +11,9 @@ namespace BusinessLogicLayer
     {
         UserClass uc = new UserClass();
         ProjectClass pc = new ProjectClass();
+        BugClass bc = new BugClass();
+        SolutionClass sc = new SolutionClass();
+
         public bool ManageUsers(int UserId,
             string FullName,
             string Username,
@@ -62,6 +65,84 @@ namespace BusinessLogicLayer
                 throw ex;
             }
 
+        }
+        public bool ManageBug(int BudId,
+            DateTime Date,
+            int ProjectId,
+            string Bug,
+            string Class,
+            string Code,
+            string Method,
+            string ClassLibrary,
+            int LineNumber,
+            string IdentifiedBy,
+            byte[] Error,
+            int Mode)
+        {
+            try
+            {
+                int rs = bc.ManageBug(BudId,
+             Date,
+             ProjectId,
+             Bug,
+             Class,
+             Code,
+            Method,
+            ClassLibrary,
+            LineNumber,
+            IdentifiedBy,
+            Error,
+           Mode);
+                if (rs > 0)
+                    return true;
+                else return false;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        public bool ManageSolution(int SolutionId,
+           DateTime Date,
+           int ProjectId,
+           int BugId,
+           string Class,
+           string Code,
+           string Block,
+           string Method,
+           string ClassLibrary,
+           int LineNumber,
+           string SolvedBy,
+           string SolutionDetail,
+           byte[] Error,
+           int Mode)
+        {
+            try
+            {
+                int rs = sc.ManageSolution(SolutionId,
+             Date,
+             ProjectId,
+             BugId,
+             Class,
+             Code,
+             Block,
+            Method,
+            ClassLibrary,
+            LineNumber,
+            SolvedBy,
+            SolutionDetail,
+            Error,
+           Mode);
+                if (rs > 0)
+                    return true;
+                else return false;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }

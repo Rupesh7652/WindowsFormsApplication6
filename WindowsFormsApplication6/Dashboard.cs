@@ -40,7 +40,7 @@ namespace WindowsFormsApplication6
 
         private void addBugToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddBug ab = new AddBug();
+            BugForm ab = new BugForm();
             ab.MdiParent = this;
             ab.Dock = DockStyle.Left;
             ab.Show();

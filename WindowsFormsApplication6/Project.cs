@@ -25,11 +25,11 @@ namespace WindowsFormsApplication6
         {
             if (BlankFieldValidation() == false)
             {
-                CreateUser();
+                CreateProject();
             }
         }
 
-        private void CreateUser()
+        private void CreateProject()
         {
             try
             {
@@ -40,10 +40,14 @@ namespace WindowsFormsApplication6
                     txtdescription.Text,
                     1);
                 if (rs == true)
-                {
-                    MessageBox.Show("Project Added Sucessfully");
-                    dgvprojectdetails.DataSource = pc.GetAllProducts();
+                    {
+                        DialogResult dr = MessageBox.Show("Do you want to add new project information?", "Add the new project",
+                          MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                        MessageBox.Show("Project Successfully Added");
+                        dgvprojectdetails.DataSource = pc.GetAllProjects();
                     HelperClass.makefields(dtpstart);
+                    txtpname.Focus();
                 }
                 else
                 {
@@ -74,7 +78,7 @@ namespace WindowsFormsApplication6
 
         private void Project_Load(object sender, EventArgs e)
         {
-            dgvprojectdetails.DataSource = pc.GetAllProducts();
+            dgvprojectdetails.DataSource = pc.GetAllProjects();
         }
         public bool BlankFieldValidation()
         {
@@ -107,8 +111,11 @@ namespace WindowsFormsApplication6
                     2);
                 if (rs == true)
                 {
-                    MessageBox.Show("Project SUCESSFULLY UPDATED");
-                    dgvprojectdetails.DataSource = pc.GetAllProducts();
+                    DialogResult dr = MessageBox.Show("Are you want to update project information?", "Update the project",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                     MessageBox.Show("Project Successfully Updated");
+                    dgvprojectdetails.DataSource = pc.GetAllProjects();
                     HelperClass.makefields(txtpname);
                     txtpname.Focus();
                 }
@@ -133,8 +140,11 @@ namespace WindowsFormsApplication6
                 3);
                 if (rs == true)
                 {
-                    MessageBox.Show("Project SUCESSFULLY DELETED");
-                    dgvprojectdetails.DataSource = pc.GetAllProducts();
+                    DialogResult dr = MessageBox.Show("Are you want to delete project information?", "Delete the project",
+                         MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dr == DialogResult.Yes)
+                        MessageBox.Show("Project Successfully Deleted");
+                    dgvprojectdetails.DataSource = pc.GetAllProjects();
                     HelperClass.makefields(txtpname);
                     txtpname.Focus();
                 }

@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddBug.cs">
+    <Compile Include="BugForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddBug.Designer.cs">
-      <DependentUpon>AddBug.cs</DependentUpon>
+    <Compile Include="BugForm.Designer.cs">
+      <DependentUpon>BugForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -97,8 +97,8 @@
     <Compile Include="Viewbug.Designer.cs">
       <DependentUpon>Viewbug.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddBug.resx">
-      <DependentUpon>AddBug.cs</DependentUpon>
+    <EmbeddedResource Include="BugForm.resx">
+      <DependentUpon>BugForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
