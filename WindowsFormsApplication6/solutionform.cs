@@ -35,6 +35,14 @@ namespace WindowsFormsApplication6
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (BlankFieldValidation() == false)
+            {
+                CreateSolution();
+            }
+        }
+
+        private void CreateSolution()
+        {
             try
             {
                 MemoryStream ms = new MemoryStream();
@@ -43,17 +51,15 @@ namespace WindowsFormsApplication6
                 ms.Position = 0;
                 ms.Read(pic, 0, pic.Length);
                 bool rs = blc.ManageSolution(0,
-                   Convert.ToDateTime(dtpdate.Text),
-              Convert.ToInt32(cmbproject.SelectedValue.ToString()),
-                       Convert.ToInt32(cmbbugid.SelectedValue.ToString()),
+                Convert.ToDateTime(dtpdate.Text),
+                 Convert.ToInt32(cmbproject.SelectedValue.ToString()),
+                Convert.ToInt32(cmbbugid.SelectedValue.ToString()),
                     txtclass.Text,
-                    txtblock.Text,
                     txtcode.Text,
                     txtmethod.Text,
                     txtclasslibrary.Text,
                   Convert.ToInt32(txtline.Text),
                     cmbsolvedby.Text,
-                    txtsolutiondetail.Text,
                     pic,
                     1);
                 if (rs == true)
@@ -102,6 +108,87 @@ namespace WindowsFormsApplication6
                 pberror.Image = new Bitmap(open.FileName);
             }
         }
+        public bool BlankFieldValidation()
+        {
+            bool res = false;
+            if (cmbproject.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please Provide ProjectId");
+                cmbproject.Focus();
+                res = true;
+            }
+            else if (txtmethod.Text == "")
+            {
+                MessageBox.Show("Please Provide Method");
+                txtmethod.Focus();
+                res = true;
 
+            }
+            else if (txtclass.Text == "")
+            {
+                MessageBox.Show("Please Provide Class");
+                txtclass.Focus();
+                res = true;
+            }
+
+            else if (cmbbugid.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please Provide BugId");
+                cmbbugid.Focus();
+                res = true;
+            }
+            else if (txtmethod.Text == "")
+            {
+                MessageBox.Show("Please Provide Method");
+                txtmethod.Focus();
+                res = true;
+            }
+            else if (txtclasslibrary.Text == "")
+            {
+                MessageBox.Show("Please Provide ClassLibrary");
+                txtclasslibrary.Focus();
+                res = true;
+            }
+            else if (txtcode.Text == "")
+            {
+                MessageBox.Show("Please Provide Code");
+                txtcode.Focus();
+                res = true;
+
+            }
+            return res;
+
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Brown;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.ForestGreen;
+        }
+
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Brown;
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.ForestGreen;
+        }
+
+        private void button5_MouseHover(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.Brown;
+        }
+
+        private void button5_MouseLeave(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.DarkCyan;
+        }
     }
 }
+

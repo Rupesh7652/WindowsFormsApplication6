@@ -11,7 +11,7 @@ using DataAccessLayer;
 using BusinessLogicLayer;
 using System.IO;
 using System.Drawing.Imaging;
-
+using WinFormsSyntaxHighlighter;
 namespace WindowsFormsApplication6
 {
     public partial class BugForm : Form
@@ -24,6 +24,7 @@ namespace WindowsFormsApplication6
         UserClass uc = new UserClass();
         ProjectClass pc = new ProjectClass();
         BugClass bc = new BugClass();
+        Viewbug vb = new Viewbug();
         public int BugId;
         public int ProjectId;
         public int UserId;
@@ -101,7 +102,8 @@ namespace WindowsFormsApplication6
             cmbidentifiedby.DisplayMember = "UserName";
             cmbidentifiedby.ValueMember = "UserId";
             cmbidentifiedby.SelectedIndex = -1;
-
+          
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -112,7 +114,7 @@ namespace WindowsFormsApplication6
         public bool BlankFieldValidation()
         {
             bool res = false;
-            if (cmbproject.Text == "")
+            if (cmbproject.SelectedIndex == -1)
             {
                 MessageBox.Show("Please Provide ProjectId");
                 cmbproject.Focus();
@@ -125,37 +127,73 @@ namespace WindowsFormsApplication6
                 res = true;
 
             }
-            if (txtclass.Text == "")
+            else if (txtclass.Text == "")
             {
                 MessageBox.Show("Please Provide Class");
                 txtclass.Focus();
                 res = true;
             }
-            if (txtmethod.Text == "")
+           else if (txtmethod.Text == "")
             {
                 MessageBox.Show("Please Provide Method");
                 txtmethod.Focus();
                 res = true;
             }
-            if (txtclasslibrary.Text == "")
+         else   if (txtclasslibrary.Text == "")
             {
                 MessageBox.Show("Please Provide ClassLibrary");
                 txtclasslibrary.Focus();
                 res = true;
             }
-            if (txtcode.Text == "")
+          else  if (txtcode.Text == "")
             {
                 MessageBox.Show("Please Provide Code");
                 txtcode.Focus();
                 res = true;
             }
-            if (cmbidentifiedby.Text == "")
+         else   if (cmbidentifiedby.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please Provide IdentifiedBy");
+                cmbidentifiedby.Focus();
+                res = true;
+            }
+            else if (cmbidentifiedby.SelectedIndex == -1)
             {
                 MessageBox.Show("Please Provide IdentifiedBy");
                 cmbidentifiedby.Focus();
                 res = true;
             }
             return res;
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Brown;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.DarkCyan;
+        }
+
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Brown;
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.DarkCyan;
+        }
+
+        private void button5_MouseHover(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.Brown;
+        }
+
+        private void button5_MouseLeave(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.DarkCyan;
         }
     }
 }

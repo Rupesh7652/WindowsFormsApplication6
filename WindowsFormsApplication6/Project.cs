@@ -161,5 +161,45 @@ namespace WindowsFormsApplication6
         {
             this.Close();
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Purple;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Transparent;
+        }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Purple;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Transparent;
+        }
+
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            button3.BackColor = Color.Purple;
+        }
+
+        private void button3_MouseLeave(object sender, EventArgs e)
+        {
+            button3.BackColor = Color.Transparent;
+        }
+
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Purple;
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Transparent;
+        }
     }
 }

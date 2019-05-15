@@ -10,7 +10,7 @@ namespace DataAccessLayer
     public class SolutionClass
     {
         SqlConnection cnnect = new SqlConnection(Connectionclass.ConnectionString);
-        public int ManageSolution(int SolutionId, DateTime Date, int ProjectId, int BugId, string Class, string Code, string Block, string Method, string ClassLibrary, int LineNumber, string Solvedby, string SolutionDetail, byte[] Error, int Mode)
+        public int ManageSolution(int SolutionId, DateTime Date, int ProjectId, int BugId, string Class, string Code, string Method, string ClassLibrary, int LineNumber, string Solvedby,  byte[] Error, int Mode)
         {
             try
             {
@@ -22,12 +22,10 @@ namespace DataAccessLayer
                 cmm.Parameters.AddWithValue("@BugId", BugId);
                 cmm.Parameters.AddWithValue("@Class", Class);
                 cmm.Parameters.AddWithValue("@Code", Code);
-                cmm.Parameters.AddWithValue("@Block", Block);
                 cmm.Parameters.AddWithValue("@Method", Method);
                 cmm.Parameters.AddWithValue("@ClassLibrary", ClassLibrary);
                 cmm.Parameters.AddWithValue("@LineNumber", LineNumber);
                 cmm.Parameters.AddWithValue("@Solvedby", Solvedby);
-                cmm.Parameters.AddWithValue("@SolutionDetail", SolutionDetail);
                 cmm.Parameters.AddWithValue("@Error", Error);
                 cmm.Parameters.AddWithValue("@Mode", Mode);
                 cnnect.Open();

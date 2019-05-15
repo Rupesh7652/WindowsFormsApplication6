@@ -97,6 +97,12 @@
     <Compile Include="Viewbug.Designer.cs">
       <DependentUpon>Viewbug.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewSolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSolution.Designer.cs">
+      <DependentUpon>ViewSolution.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BugForm.resx">
       <DependentUpon>BugForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +136,9 @@
     <EmbeddedResource Include="Viewbug.resx">
       <DependentUpon>Viewbug.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewSolution.resx">
+      <DependentUpon>ViewSolution.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Bug Tracking System manual.pdf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -153,10 +162,17 @@
       <Project>{54354410-e66e-4841-b46c-a74376a333ed}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WinFormsSyntaxHighlighter\WinFormsSyntaxHighlighter.csproj">
+      <Project>{a84b044a-f5dd-4220-baff-a18f17585e31}</Project>
+      <Name>WinFormsSyntaxHighlighter</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\17241-200.png" />
     <Content Include="images\pwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

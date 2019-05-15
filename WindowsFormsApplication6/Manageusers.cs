@@ -165,6 +165,46 @@ namespace WindowsFormsApplication6
             txtpassword.Text = dgvusersdetails.SelectedRows[0].Cells["Password"].Value.ToString();
             cmbRole.Text = dgvusersdetails.SelectedRows[0].Cells["Role"].Value.ToString();
         }
+
+        private void btnAdd_MouseHover(object sender, EventArgs e)
+        {
+            btnAdd.BackColor = Color.Brown;
+        }
+
+        private void btnAdd_MouseLeave(object sender, EventArgs e)
+        {
+            btnAdd.BackColor = Color.MediumPurple;
+        }
+
+        private void btnUpdate_MouseHover(object sender, EventArgs e)
+        {
+            btnUpdate.BackColor = Color.Brown;
+        }
+
+        private void btnUpdate_MouseLeave(object sender, EventArgs e)
+        {
+            btnUpdate.BackColor = Color.MediumPurple;
+        }
+
+        private void btnDelete_MouseHover(object sender, EventArgs e)
+        {
+            btnDelete.BackColor = Color.Brown;
+        }
+
+        private void btnDelete_MouseLeave(object sender, EventArgs e)
+        {
+            btnDelete.BackColor = Color.MediumPurple;
+        }
+
+        private void btnClose_MouseHover(object sender, EventArgs e)
+        {
+            btnClose.BackColor = Color.Brown;
+        }
+
+        private void btnClose_MouseLeave(object sender, EventArgs e)
+        {
+            btnClose.BackColor = Color.MediumPurple;
+        }
     }
     }
 

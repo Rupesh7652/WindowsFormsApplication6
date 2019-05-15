@@ -64,5 +64,26 @@ namespace WindowsFormsApplication6
         {
             this.Close();
         }
+
+        private void btnrolebasedlogin_MouseHover(object sender, EventArgs e)
+        {
+           btnsignup .BackColor = Color.Orange;
+          
+        }
+
+        private void btnsignup_MouseLeave(object sender, EventArgs e)
+        {
+            btnsignup.BackColor = Color.Gray;
+        }
+
+        private void BTNcANCEL_MouseHover(object sender, EventArgs e)
+        {
+            btncancel.BackColor = Color.Orange;
+        }
+
+        private void btncancel_MouseLeave(object sender, EventArgs e)
+        {
+            btncancel.BackColor = Color.Gray;
+        }
     }
 }

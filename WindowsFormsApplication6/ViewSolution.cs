@@ -7,24 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using DataAccessLayer;
 using BusinessLogicLayer;
-
+using System.IO;
+using System.Drawing.Imaging;
 namespace WindowsFormsApplication6
 {
-    public partial class searchform : Form
+    public partial class ViewSolution : Form
     {
-        UserClass uc = new UserClass();
-      
-        public searchform()
+        SolutionClass sc = new SolutionClass();
+        public ViewSolution()
         {
             InitializeComponent();
-            
+            dgvsolutions.DataSource = sc.GetAllSolutions();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+      
+        private void ViewSolution_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

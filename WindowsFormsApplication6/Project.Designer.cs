@@ -96,6 +96,7 @@
             // 
             // txtdescription
             // 
+            this.txtdescription.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdescription.Location = new System.Drawing.Point(169, 231);
             this.txtdescription.Multiline = true;
             this.txtdescription.Name = "txtdescription";
@@ -115,66 +116,77 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(448, 226);
+            this.button4.Location = new System.Drawing.Point(448, 273);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 28);
+            this.button4.Size = new System.Drawing.Size(87, 35);
             this.button4.TabIndex = 10;
             this.button4.Text = "CLOSE";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(448, 179);
+            this.button3.Location = new System.Drawing.Point(448, 216);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 28);
+            this.button3.Size = new System.Drawing.Size(87, 35);
             this.button3.TabIndex = 9;
             this.button3.Text = "DELETE";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(448, 133);
+            this.button2.Location = new System.Drawing.Point(448, 151);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 28);
+            this.button2.Size = new System.Drawing.Size(87, 36);
             this.button2.TabIndex = 8;
             this.button2.Text = "UPDATE";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(448, 82);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 28);
+            this.button1.Size = new System.Drawing.Size(87, 35);
             this.button1.TabIndex = 7;
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // txtpname
             // 
+            this.txtpname.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpname.Location = new System.Drawing.Point(169, 87);
             this.txtpname.Name = "txtpname";
-            this.txtpname.Size = new System.Drawing.Size(248, 20);
+            this.txtpname.Size = new System.Drawing.Size(248, 23);
             this.txtpname.TabIndex = 6;
             // 
             // dtpend
             // 
+            this.dtpend.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpend.Location = new System.Drawing.Point(169, 177);
             this.dtpend.Name = "dtpend";
-            this.dtpend.Size = new System.Drawing.Size(248, 20);
+            this.dtpend.Size = new System.Drawing.Size(248, 23);
             this.dtpend.TabIndex = 5;
             // 
             // dtpstart
             // 
+            this.dtpstart.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpstart.Location = new System.Drawing.Point(169, 131);
             this.dtpstart.Name = "dtpstart";
-            this.dtpstart.Size = new System.Drawing.Size(248, 20);
+            this.dtpstart.Size = new System.Drawing.Size(248, 23);
             this.dtpstart.TabIndex = 4;
             // 
             // label4

@@ -40,9 +40,10 @@
             this.addProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -140,9 +141,10 @@
             // 
             this.bugToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addBugToolStripMenuItem,
-            this.searchBugToolStripMenuItem,
+            this.solutionToolStripMenuItem,
             this.viewBugToolStripMenuItem,
-            this.solutionToolStripMenuItem});
+            this.searchBugToolStripMenuItem,
+            this.searchToolStripMenuItem});
             this.bugToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bugToolStripMenuItem.Name = "bugToolStripMenuItem";
             this.bugToolStripMenuItem.Size = new System.Drawing.Size(47, 23);
@@ -151,30 +153,37 @@
             // addBugToolStripMenuItem
             // 
             this.addBugToolStripMenuItem.Name = "addBugToolStripMenuItem";
-            this.addBugToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
+            this.addBugToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
             this.addBugToolStripMenuItem.Text = "Add Bug";
             this.addBugToolStripMenuItem.Click += new System.EventHandler(this.addBugToolStripMenuItem_Click);
-            // 
-            // searchBugToolStripMenuItem
-            // 
-            this.searchBugToolStripMenuItem.Name = "searchBugToolStripMenuItem";
-            this.searchBugToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
-            this.searchBugToolStripMenuItem.Text = "Search Bug";
-            this.searchBugToolStripMenuItem.Click += new System.EventHandler(this.searchBugToolStripMenuItem_Click);
-            // 
-            // viewBugToolStripMenuItem
-            // 
-            this.viewBugToolStripMenuItem.Name = "viewBugToolStripMenuItem";
-            this.viewBugToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
-            this.viewBugToolStripMenuItem.Text = "View Bug";
-            this.viewBugToolStripMenuItem.Click += new System.EventHandler(this.viewBugToolStripMenuItem_Click);
             // 
             // solutionToolStripMenuItem
             // 
             this.solutionToolStripMenuItem.Name = "solutionToolStripMenuItem";
-            this.solutionToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
+            this.solutionToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
             this.solutionToolStripMenuItem.Text = "Solution";
             this.solutionToolStripMenuItem.Click += new System.EventHandler(this.solutionToolStripMenuItem_Click);
+            // 
+            // viewBugToolStripMenuItem
+            // 
+            this.viewBugToolStripMenuItem.Name = "viewBugToolStripMenuItem";
+            this.viewBugToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.viewBugToolStripMenuItem.Text = "View Bug";
+            this.viewBugToolStripMenuItem.Click += new System.EventHandler(this.viewBugToolStripMenuItem_Click);
+            // 
+            // searchBugToolStripMenuItem
+            // 
+            this.searchBugToolStripMenuItem.Name = "searchBugToolStripMenuItem";
+            this.searchBugToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.searchBugToolStripMenuItem.Text = "View Solution";
+            this.searchBugToolStripMenuItem.Click += new System.EventHandler(this.searchBugToolStripMenuItem_Click);
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.searchToolStripMenuItem.Text = "Search";
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // reportToolStripMenuItem
             // 
@@ -259,5 +268,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
     }
 }

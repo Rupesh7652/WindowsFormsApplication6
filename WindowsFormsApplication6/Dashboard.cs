@@ -48,10 +48,10 @@ namespace WindowsFormsApplication6
 
         private void searchBugToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            searchform sf = new searchform();
-            sf.MdiParent = this;
-            sf.Dock = DockStyle.Left;
-            sf.Show();
+            ViewSolution vs = new ViewSolution();
+            vs.MdiParent = this;
+            vs.Dock = DockStyle.Left;
+            vs.Show();
         }
 
         private void viewBugToolStripMenuItem_Click(object sender, EventArgs e)
@@ -80,6 +80,14 @@ namespace WindowsFormsApplication6
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            searchform sf = new searchform();
+            sf.MdiParent = this;
+            sf.Dock = DockStyle.Left;
+            sf.Show();
         }
     }
 }

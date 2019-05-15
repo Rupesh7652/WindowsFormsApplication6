@@ -109,12 +109,10 @@ namespace BusinessLogicLayer
            int BugId,
            string Class,
            string Code,
-           string Block,
            string Method,
            string ClassLibrary,
            int LineNumber,
            string SolvedBy,
-           string SolutionDetail,
            byte[] Error,
            int Mode)
         {
@@ -126,12 +124,10 @@ namespace BusinessLogicLayer
              BugId,
              Class,
              Code,
-             Block,
             Method,
             ClassLibrary,
             LineNumber,
             SolvedBy,
-            SolutionDetail,
             Error,
            Mode);
                 if (rs > 0)

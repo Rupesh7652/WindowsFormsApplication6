@@ -107,15 +107,18 @@
             this.button5.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(436, 330);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(76, 32);
+            this.button5.Size = new System.Drawing.Size(93, 40);
             this.button5.TabIndex = 52;
             this.button5.Text = "Browser";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
             // 
             // txtcode
             // 
             this.txtcode.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtcode.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcode.Location = new System.Drawing.Point(552, 162);
             this.txtcode.Multiline = true;
             this.txtcode.Name = "txtcode";
@@ -124,24 +127,27 @@
             // 
             // txtline
             // 
+            this.txtline.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtline.Location = new System.Drawing.Point(125, 298);
             this.txtline.Name = "txtline";
-            this.txtline.Size = new System.Drawing.Size(247, 27);
+            this.txtline.Size = new System.Drawing.Size(247, 23);
             this.txtline.TabIndex = 25;
             // 
             // cmbidentifiedby
             // 
+            this.cmbidentifiedby.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbidentifiedby.FormattingEnabled = true;
             this.cmbidentifiedby.Location = new System.Drawing.Point(552, 117);
             this.cmbidentifiedby.Name = "cmbidentifiedby";
-            this.cmbidentifiedby.Size = new System.Drawing.Size(213, 27);
+            this.cmbidentifiedby.Size = new System.Drawing.Size(213, 23);
             this.cmbidentifiedby.TabIndex = 24;
             // 
             // txtclasslibrary
             // 
+            this.txtclasslibrary.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtclasslibrary.Location = new System.Drawing.Point(552, 76);
             this.txtclasslibrary.Name = "txtclasslibrary";
-            this.txtclasslibrary.Size = new System.Drawing.Size(213, 27);
+            this.txtclasslibrary.Size = new System.Drawing.Size(213, 23);
             this.txtclasslibrary.TabIndex = 23;
             // 
             // button4
@@ -155,6 +161,8 @@
             this.button4.Text = "CLOSE";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // button1
             // 
@@ -167,6 +175,8 @@
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // label8
             // 
@@ -180,38 +190,43 @@
             // 
             // cmbproject
             // 
+            this.cmbproject.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbproject.FormattingEnabled = true;
             this.cmbproject.Location = new System.Drawing.Point(125, 75);
             this.cmbproject.Name = "cmbproject";
-            this.cmbproject.Size = new System.Drawing.Size(247, 27);
+            this.cmbproject.Size = new System.Drawing.Size(247, 23);
             this.cmbproject.TabIndex = 17;
             // 
             // txtclass
             // 
+            this.txtclass.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtclass.Location = new System.Drawing.Point(125, 204);
             this.txtclass.Name = "txtclass";
-            this.txtclass.Size = new System.Drawing.Size(247, 27);
+            this.txtclass.Size = new System.Drawing.Size(247, 23);
             this.txtclass.TabIndex = 16;
             // 
             // txtbug
             // 
+            this.txtbug.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbug.Location = new System.Drawing.Point(125, 250);
             this.txtbug.Name = "txtbug";
-            this.txtbug.Size = new System.Drawing.Size(247, 27);
+            this.txtbug.Size = new System.Drawing.Size(247, 23);
             this.txtbug.TabIndex = 14;
             // 
             // txtmethod
             // 
+            this.txtmethod.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmethod.Location = new System.Drawing.Point(125, 115);
             this.txtmethod.Name = "txtmethod";
-            this.txtmethod.Size = new System.Drawing.Size(247, 27);
+            this.txtmethod.Size = new System.Drawing.Size(247, 23);
             this.txtmethod.TabIndex = 13;
             // 
             // dtpdate
             // 
+            this.dtpdate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpdate.Location = new System.Drawing.Point(125, 159);
             this.dtpdate.Name = "dtpdate";
-            this.dtpdate.Size = new System.Drawing.Size(247, 27);
+            this.dtpdate.Size = new System.Drawing.Size(247, 23);
             this.dtpdate.TabIndex = 12;
             // 
             // label12

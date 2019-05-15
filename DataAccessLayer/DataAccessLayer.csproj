@@ -46,6 +46,7 @@
     <Compile Include="Connectionclass.cs" />
     <Compile Include="ProjectClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Searchclass.cs" />
     <Compile Include="SolutionClass.cs" />
     <Compile Include="UserClass.cs" />
   </ItemGroup>

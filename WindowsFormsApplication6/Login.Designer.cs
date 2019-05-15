@@ -29,41 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.BTNcANCEL = new System.Windows.Forms.Button();
-            this.btnrolebasedlogin = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnsignup = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // BTNcANCEL
+            // btncancel
             // 
-            this.BTNcANCEL.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BTNcANCEL.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNcANCEL.Location = new System.Drawing.Point(225, 256);
-            this.BTNcANCEL.Name = "BTNcANCEL";
-            this.BTNcANCEL.Size = new System.Drawing.Size(128, 39);
-            this.BTNcANCEL.TabIndex = 11;
-            this.BTNcANCEL.Text = "CANCEL";
-            this.BTNcANCEL.UseVisualStyleBackColor = false;
-            this.BTNcANCEL.Click += new System.EventHandler(this.BTNcANCEL_Click);
-            // 
-            // btnrolebasedlogin
-            // 
-            this.btnrolebasedlogin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnrolebasedlogin.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnrolebasedlogin.Location = new System.Drawing.Point(65, 256);
-            this.btnrolebasedlogin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnrolebasedlogin.Name = "btnrolebasedlogin";
-            this.btnrolebasedlogin.Size = new System.Drawing.Size(130, 39);
-            this.btnrolebasedlogin.TabIndex = 10;
-            this.btnrolebasedlogin.Text = "SIGN IN";
-            this.btnrolebasedlogin.UseVisualStyleBackColor = false;
-            this.btnrolebasedlogin.Click += new System.EventHandler(this.btnrolebasedlogin_Click);
+            this.btncancel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btncancel.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.Location = new System.Drawing.Point(225, 256);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(128, 39);
+            this.btncancel.TabIndex = 11;
+            this.btncancel.Text = "CANCEL";
+            this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.BTNcANCEL_Click);
+            this.btncancel.MouseLeave += new System.EventHandler(this.btncancel_MouseLeave);
+            this.btncancel.MouseHover += new System.EventHandler(this.BTNcANCEL_MouseHover);
             // 
             // groupBox1
             // 
@@ -83,7 +72,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(127, 106);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPassword.Multiline = true;
@@ -94,7 +83,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(127, 47);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtUsername.Multiline = true;
@@ -136,6 +125,21 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "LOGIN";
             // 
+            // btnsignup
+            // 
+            this.btnsignup.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnsignup.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsignup.Location = new System.Drawing.Point(65, 256);
+            this.btnsignup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnsignup.Name = "btnsignup";
+            this.btnsignup.Size = new System.Drawing.Size(130, 39);
+            this.btnsignup.TabIndex = 10;
+            this.btnsignup.Text = "SIGN IN";
+            this.btnsignup.UseVisualStyleBackColor = false;
+            this.btnsignup.Click += new System.EventHandler(this.btnrolebasedlogin_Click);
+            this.btnsignup.MouseLeave += new System.EventHandler(this.btnsignup_MouseLeave);
+            this.btnsignup.MouseHover += new System.EventHandler(this.btnrolebasedlogin_MouseHover);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,8 +148,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(556, 342);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.BTNcANCEL);
-            this.Controls.Add(this.btnrolebasedlogin);
+            this.Controls.Add(this.btncancel);
+            this.Controls.Add(this.btnsignup);
             this.Controls.Add(this.groupBox1);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -160,14 +164,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BTNcANCEL;
-        private System.Windows.Forms.Button btnrolebasedlogin;
+        private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnsignup;
     }
 }
 
