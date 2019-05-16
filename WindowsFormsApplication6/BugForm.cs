@@ -11,7 +11,7 @@ using DataAccessLayer;
 using BusinessLogicLayer;
 using System.IO;
 using System.Drawing.Imaging;
-using WinFormsSyntaxHighlighter;
+
 namespace WindowsFormsApplication6
 {
     public partial class BugForm : Form

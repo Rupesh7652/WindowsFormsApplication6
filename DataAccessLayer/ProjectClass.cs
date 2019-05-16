@@ -67,5 +67,30 @@ namespace DataAccessLayer
 
             }
         }
+        public DataTable GetAllProjectsbyid(int id)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlCommand cmd = new SqlCommand("select * from ProjectTable where ProjectId=@id", cnnect);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@id",id);
+                cnnect.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                dt.Load(dr);
+                cnnect.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cnnect.Close();
+
+            }
+        }
     }
 }

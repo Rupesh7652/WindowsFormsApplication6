@@ -93,6 +93,7 @@
             this.dgvprojectdetails.Size = new System.Drawing.Size(558, 206);
             this.dgvprojectdetails.TabIndex = 0;
             this.dgvprojectdetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvprojectdetails_CellClick);
+            this.dgvprojectdetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvprojectdetails_CellContentClick_1);
             // 
             // txtdescription
             // 

@@ -201,5 +201,10 @@ namespace WindowsFormsApplication6
         {
             button4.BackColor = Color.Transparent;
         }
+
+        private void dgvprojectdetails_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

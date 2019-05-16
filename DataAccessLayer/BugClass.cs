@@ -111,5 +111,30 @@ namespace DataAccessLayer
                 cnnect.Close();
             }
         }
+        public DataTable GetAllBugsbyid( int id)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlCommand cmm = new SqlCommand("select * from BugTable where BugId =@id", cnnect);
+                cmm.CommandType = CommandType.Text;
+                cmm.Parameters.AddWithValue("@id", id);
+                cnnect.Open();
+
+                SqlDataReader dr = cmm.ExecuteReader();
+                dt.Load(dr);
+                cnnect.Close();
+                return dt;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cnnect.Close();
+            }
+        }
     }
 }

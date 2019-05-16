@@ -79,7 +79,7 @@ namespace WindowsFormsApplication6
 
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            System.Diagnostics.Process.Start("C:\\Users\\robin\\OneDrive\\Documents\\Visual Studio 2015\\Projects\\WindowsFormsApplication6\\WindowsFormsApplication6\\Bug Tracking System manual.pdf");
         }
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,6 +88,11 @@ namespace WindowsFormsApplication6
             sf.MdiParent = this;
             sf.Dock = DockStyle.Left;
             sf.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

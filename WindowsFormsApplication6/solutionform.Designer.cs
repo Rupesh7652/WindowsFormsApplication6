@@ -50,9 +50,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbbugid = new System.Windows.Forms.ComboBox();
             this.txtclasslibrary = new System.Windows.Forms.TextBox();
-            this.dtpdate = new System.Windows.Forms.DateTimePicker();
             this.txtclass = new System.Windows.Forms.TextBox();
             this.txtmethod = new System.Windows.Forms.TextBox();
+            this.dtpdate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pberror)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -229,7 +229,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(93, 48);
             this.button5.TabIndex = 51;
-            this.button5.Text = "Browser";
+            this.button5.Text = "SELECT";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
@@ -237,7 +237,7 @@
             // 
             // pberror
             // 
-            this.pberror.BackColor = System.Drawing.Color.Gray;
+            this.pberror.BackColor = System.Drawing.Color.White;
             this.pberror.Location = new System.Drawing.Point(521, 330);
             this.pberror.Name = "pberror";
             this.pberror.Size = new System.Drawing.Size(226, 190);
@@ -246,7 +246,7 @@
             // 
             // txtcode
             // 
-            this.txtcode.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtcode.BackColor = System.Drawing.Color.White;
             this.txtcode.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcode.Location = new System.Drawing.Point(517, 120);
             this.txtcode.Multiline = true;
@@ -305,14 +305,6 @@
             this.txtclasslibrary.Size = new System.Drawing.Size(226, 23);
             this.txtclasslibrary.TabIndex = 47;
             // 
-            // dtpdate
-            // 
-            this.dtpdate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpdate.Location = new System.Drawing.Point(148, 169);
-            this.dtpdate.Name = "dtpdate";
-            this.dtpdate.Size = new System.Drawing.Size(227, 23);
-            this.dtpdate.TabIndex = 34;
-            // 
             // txtclass
             // 
             this.txtclass.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -328,6 +320,14 @@
             this.txtmethod.Name = "txtmethod";
             this.txtmethod.Size = new System.Drawing.Size(227, 23);
             this.txtmethod.TabIndex = 35;
+            // 
+            // dtpdate
+            // 
+            this.dtpdate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpdate.Location = new System.Drawing.Point(148, 169);
+            this.dtpdate.Name = "dtpdate";
+            this.dtpdate.Size = new System.Drawing.Size(227, 23);
+            this.dtpdate.TabIndex = 34;
             // 
             // solutionform
             // 

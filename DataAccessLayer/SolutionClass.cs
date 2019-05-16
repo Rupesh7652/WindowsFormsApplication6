@@ -136,5 +136,29 @@ namespace DataAccessLayer
                 cnnect.Close();
             }
         }
+        public DataTable GetAllSolutionsbyid( int id)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlCommand cmm = new SqlCommand("select * from SolutionTable where SolutionId=@id", cnnect);
+                cmm.CommandType = CommandType.Text;
+                cmm.Parameters.AddWithValue("@id", id);
+                cnnect.Open();
+                SqlDataReader dr = cmm.ExecuteReader();
+                dt.Load(dr);
+                cnnect.Close();
+                return dt;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cnnect.Close();
+            }
+        }
     }
 }

@@ -94,7 +94,7 @@
             // 
             // pberror
             // 
-            this.pberror.BackColor = System.Drawing.Color.Gray;
+            this.pberror.BackColor = System.Drawing.Color.White;
             this.pberror.Location = new System.Drawing.Point(555, 334);
             this.pberror.Name = "pberror";
             this.pberror.Size = new System.Drawing.Size(210, 152);
@@ -109,7 +109,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(93, 40);
             this.button5.TabIndex = 52;
-            this.button5.Text = "Browser";
+            this.button5.Text = "SELECT";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
@@ -117,7 +117,7 @@
             // 
             // txtcode
             // 
-            this.txtcode.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtcode.BackColor = System.Drawing.Color.White;
             this.txtcode.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcode.Location = new System.Drawing.Point(552, 162);
             this.txtcode.Multiline = true;
