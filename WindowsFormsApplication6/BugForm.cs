@@ -183,7 +183,7 @@ namespace WindowsFormsApplication6
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
-            button1.BackColor = Color.DarkCyan;
+            button4.BackColor = Color.DarkCyan;
         }
 
         private void button5_MouseHover(object sender, EventArgs e)

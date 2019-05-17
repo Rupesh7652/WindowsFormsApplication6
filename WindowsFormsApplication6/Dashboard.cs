@@ -12,11 +12,16 @@ namespace WindowsFormsApplication6
 {
     public partial class Dashboard : Form
     {
+
         public Dashboard()
         {
             InitializeComponent();
+          
         }
 
+      
+      
+        
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
 
@@ -79,7 +84,7 @@ namespace WindowsFormsApplication6
 
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\\Users\\robin\\OneDrive\\Documents\\Visual Studio 2015\\Projects\\WindowsFormsApplication6\\WindowsFormsApplication6\\Bug Tracking System manual.pdf");
+            System.Diagnostics.Process.Start("C:\\Users\\robin\\onedrive\\documents\\visual studio 2015\\Projects\\WindowsFormsApplication6\\WindowsFormsApplication6\\Bug Tracking System manual.pdf");
         }
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -92,7 +97,20 @@ namespace WindowsFormsApplication6
 
         private void label3_Click(object sender, EventArgs e)
         {
+            System.Diagnostics.Process.Start("https://github.com/Rupesh7652/WindowsFormsApplication6/commits/master");
+        }
 
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changepassword cp = new Changepassword();
+            cp.MdiParent = this;
+            cp.Dock = DockStyle.Left;
+            cp.Show();
         }
     }
 }

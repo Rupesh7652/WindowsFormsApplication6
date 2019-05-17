@@ -19,7 +19,7 @@ namespace WindowsFormsApplication6
         UserClass uc = new UserClass();
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnrolebasedlogin_Click(object sender, EventArgs e)
@@ -32,21 +32,39 @@ namespace WindowsFormsApplication6
             {
                 MessageBox.Show("Please provide Password");
             }
-           
+
             else
                 try
                 {
                     string role = uc.RoleBasedLogin(txtUsername.Text, txtPassword.Text);
-                    if (role == "Debugger")
+
+
+                    if (role == "Admin")
+                    {
+                        MessageBox.Show(txtUsername.Text);
+                        Dashboard db = new Dashboard();
+                        db.lblusername.Text = txtUsername.Text;
+                    
+                        db.ShowDialog();
+                       
+                    }
+                    else if (role == "Developer")
                     {
                         Dashboard db = new Dashboard();
-                        db.Show();
+                        db.userToolStripMenuItem.Enabled = false;
+                        db.securityToolStripMenuItem.Enabled = false;
+                        db.ShowDialog();
                     }
-                    else if (role == "User")
+                    else if (role == "Tester")
                     {
                         Dashboard db = new Dashboard();
-                        db.Show();
+                        db.projectToolStripMenuItem.Enabled = false;
+                        db.userToolStripMenuItem.Enabled = false;
+                        db.securityToolStripMenuItem.Enabled = false;
+                        db.ShowDialog();
                     }
+                  
+            
                     else
                     {
                         MessageBox.Show("Invalid Username or Password");
@@ -56,6 +74,7 @@ namespace WindowsFormsApplication6
                 }
                 catch (Exception ex)
                 {
+
                     MessageBox.Show(ex.Message);
                 }
         }

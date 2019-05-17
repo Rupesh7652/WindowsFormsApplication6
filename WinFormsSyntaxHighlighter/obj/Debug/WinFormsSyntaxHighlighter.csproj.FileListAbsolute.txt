@@ -37,3 +37,7 @@ C:\Users\robin\OneDrive\Documents\Visual Studio 2015\Projects\WindowsFormsApplic
 C:\Users\robin\OneDrive\Documents\Visual Studio 2015\Projects\WindowsFormsApplication6\WinFormsSyntaxHighlighter\obj\Debug\WinFormsSyntaxHighlighter.csprojResolveAssemblyReference.cache
 C:\Users\robin\OneDrive\Documents\Visual Studio 2015\Projects\WindowsFormsApplication6\WinFormsSyntaxHighlighter\obj\Debug\WinFormsSyntaxHighlighter.dll
 C:\Users\robin\OneDrive\Documents\Visual Studio 2015\Projects\WindowsFormsApplication6\WinFormsSyntaxHighlighter\obj\Debug\WinFormsSyntaxHighlighter.pdb
+C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WinFormsSyntaxHighlighter\bin\Debug\BusinessLogicLayer.dll
+C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WinFormsSyntaxHighlighter\bin\Debug\DataAccessLayer.dll
+C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WinFormsSyntaxHighlighter\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\robin\onedrive\documents\visual studio 2015\Projects\WindowsFormsApplication6\WinFormsSyntaxHighlighter\bin\Debug\DataAccessLayer.pdb

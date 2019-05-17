@@ -54,7 +54,7 @@ namespace DataAccessLayer
             finally { cnnect.Close(); }
         }
 
-        public string RoleBasedLogin( String Username, String Password)
+        public string RoleBasedLogin(String Username, String Password)
         {
             try
             {
@@ -62,15 +62,15 @@ namespace DataAccessLayer
                 string Role = "Admin";
                 SqlCommand cmm = new SqlCommand("Select Role from UsersTable where  Username=@Username and Password=@Password", cnnect);
                 cmm.CommandType = CommandType.Text;
-             //   cmm.Parameters.AddWithValue("@FullName", FullName);
+                //   cmm.Parameters.AddWithValue("@FullName", FullName);
                 cmm.Parameters.AddWithValue("@Username", Username);
                 cmm.Parameters.AddWithValue("@Password", Password);
                 cnnect.Open();
                 SqlDataReader dr = cmm.ExecuteReader();
                 dt.Load(dr);
                 cnnect.Close();
-               Role = dt.Rows[0]["Role"].ToString();
-               return Role;
+                Role = dt.Rows[0]["Role"].ToString();
+                return Role;
             }
             catch (Exception ex)
             {
@@ -79,5 +79,17 @@ namespace DataAccessLayer
             }
             finally { cnnect.Close(); }
         }
+      public int changepassword(string un, string oldpass,string newpass)
+        {
+            SqlCommand cmd = new SqlCommand("Update UsersTable set Password=@new where Username=@un and Password=@old ",cnnect);
+            cmd.Parameters.AddWithValue("@new",newpass);
+            cmd.Parameters.AddWithValue("@un", un);
+            cmd.Parameters.AddWithValue("@old", oldpass);
+            cnnect.Open();
+            int res = cmd.ExecuteNonQuery();
+            cnnect.Close();
+            return res;
+        }
+
     }
 }

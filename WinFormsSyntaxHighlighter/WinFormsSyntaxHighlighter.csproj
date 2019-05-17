@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WinFormsSyntaxHighlighter</RootNamespace>
     <AssemblyName>WinFormsSyntaxHighlighter</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -58,13 +58,16 @@
     <Compile Include="TextBoxBaseExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
-      <Project>{d113df7f-1f63-4eff-9c76-4699d0609c07}</Project>
+      <Project>{315e25a3-bbfb-4fe7-9e76-ed76bc1018b2}</Project>
       <Name>BusinessLogicLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Data_Access_Layer\Data_Access_Layer.csproj">
-      <Project>{cc5e7928-34a2-4c87-b43a-28b33d364c5c}</Project>
-      <Name>Data_Access_Layer</Name>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{54354410-e66e-4841-b46c-a74376a333ed}</Project>
+      <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

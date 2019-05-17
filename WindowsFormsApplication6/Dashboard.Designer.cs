@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblusername = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -44,12 +46,12 @@
             this.viewBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.securityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -58,6 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Crimson;
+            this.panel1.Controls.Add(this.lblusername);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
@@ -66,6 +69,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(743, 65);
             this.panel1.TabIndex = 0;
+            // 
+            // lblusername
+            // 
+            this.lblusername.AutoSize = true;
+            this.lblusername.Location = new System.Drawing.Point(13, 22);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(0, 13);
+            this.lblusername.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(650, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 19);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "GitHub";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox1
             // 
@@ -99,8 +121,8 @@
             this.userToolStripMenuItem,
             this.projectToolStripMenuItem,
             this.bugToolStripMenuItem,
-            this.reportToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.helpToolStripMenuItem,
+            this.securityToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 65);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(743, 27);
@@ -187,13 +209,6 @@
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
-            // reportToolStripMenuItem
-            // 
-            this.reportToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(68, 23);
-            this.reportToolStripMenuItem.Text = "Report";
-            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -209,6 +224,22 @@
             this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
+            // 
+            // securityToolStripMenuItem
+            // 
+            this.securityToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.changePasswordToolStripMenuItem});
+            this.securityToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.securityToolStripMenuItem.Name = "securityToolStripMenuItem";
+            this.securityToolStripMenuItem.Size = new System.Drawing.Size(77, 23);
+            this.securityToolStripMenuItem.Text = "Security";
+            // 
+            // changePasswordToolStripMenuItem
+            // 
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(197, 24);
+            this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
             // timer1
             // 
@@ -228,17 +259,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Time\r\n";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(650, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "GitHub";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -251,6 +271,7 @@
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -266,16 +287,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem projectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addProjectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bugToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addBugToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchBugToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewBugToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem solutionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
@@ -283,5 +301,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem projectToolStripMenuItem;
+        public System.Windows.Forms.Label lblusername;
+        public System.Windows.Forms.ToolStripMenuItem securityToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
     }
 }

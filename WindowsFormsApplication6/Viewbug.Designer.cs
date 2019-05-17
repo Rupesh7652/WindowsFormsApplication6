@@ -66,6 +66,7 @@
             this.MinimumSize = new System.Drawing.Size(844, 515);
             this.Name = "Viewbug";
             this.Text = "Viewbug";
+            this.Load += new System.EventHandler(this.Viewbug_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvviewbug)).EndInit();
             this.ResumeLayout(false);

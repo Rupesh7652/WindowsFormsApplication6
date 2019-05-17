@@ -39,7 +39,12 @@ namespace WindowsFormsApplication6
         {
             try
             {
-                bool result = blc.ManageUsers(0, txtfullname.Text, txtusername.Text, txtpassword.Text, cmbRole.Text, 1);
+                bool result = blc.ManageUsers(0, 
+                    txtfullname.Text, 
+                    txtusername.Text,
+                    
+                    txtpassword.Text, 
+                    cmbRole.Text, 1);
                 if (result == true)
                 {
                     DialogResult dr = MessageBox.Show("Do you want to add new user information?", "Add the new user",
@@ -73,7 +78,7 @@ namespace WindowsFormsApplication6
                     if (dr == DialogResult.Yes)
                         MessageBox.Show("User Successfully Updated");
                     dgvusersdetails.DataSource = uc.GetAllUsers();
-                    HelperClass.makefields(grpContainer);
+                    HelperClass.makefields(txtfullname);
                     txtfullname.Focus();
                 }
                 else
@@ -101,7 +106,7 @@ namespace WindowsFormsApplication6
                     if (dr == DialogResult.Yes)
                         MessageBox.Show("User Successfully Deleted");
                     dgvusersdetails.DataSource = uc.GetAllUsers();
-                    HelperClass.makefields(grpContainer);
+                    HelperClass.makefields(txtfullname);
 
                 }
                 else

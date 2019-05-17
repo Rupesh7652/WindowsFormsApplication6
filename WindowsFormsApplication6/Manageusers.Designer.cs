@@ -226,8 +226,8 @@
             this.cmbRole.FormattingEnabled = true;
             this.cmbRole.Items.AddRange(new object[] {
             "Admin",
-            "User",
-            "Tester"});
+            "Tester",
+            "Developer"});
             this.cmbRole.Location = new System.Drawing.Point(144, 147);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(161, 21);

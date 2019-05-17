@@ -23,11 +23,6 @@ namespace WindowsFormsApplication6
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             dataGridView2.DataSource = pc.GetAllProjectsbyid(Int32.Parse(textBox2.Text));
@@ -41,6 +36,11 @@ namespace WindowsFormsApplication6
         private void button4_Click(object sender, EventArgs e)
         {
             dataGridView4.DataSource = sc.GetAllSolutionsbyid(Int32.Parse(textBox4.Text));
+        }
+
+        private void searchform_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

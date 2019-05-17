@@ -35,5 +35,10 @@ namespace WindowsFormsApplication6
           //  txtpassword.Text = dgvusersdetails.SelectedRows[0].Cells["Password"].Value.ToString();
           //  cmbRole.Text = dgvusersdetails.SelectedRows[0].Cells["Role"].Value.ToString();
         }
+
+        private void Viewbug_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
